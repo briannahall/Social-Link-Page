@@ -42,10 +42,21 @@ header #social-handle{
     padding: 10px;
     border: 1px solid var(--black);
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+a.list-link p:hover, 
+a.list-link:focus p{
+    background-color: var(--background-color);
+    color: black;
+    font-weight: 700;
 }
 
 .list-link:nth-of-type(3n + 1) p{
     background-color: var(--light-shade);
+}
+.list-link:nth-of-type(3n + 1) p::hover{
+    color: var(--light-shade);
 }
 
 .list-link:nth-of-type(3n + 2) p{
